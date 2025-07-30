@@ -26,7 +26,14 @@ export default {
 				foreground: 'hsl(var(--foreground))',
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
-					foreground: 'hsl(var(--primary-foreground))'
+					foreground: 'hsl(var(--primary-foreground))',
+					hover: 'hsl(var(--primary-hover))'
+				},
+				consulting: {
+					blue: 'hsl(var(--consulting-blue))',
+					navy: 'hsl(var(--consulting-navy))',
+					gray: 'hsl(var(--consulting-gray))',
+					light: 'hsl(var(--consulting-light))'
 				},
 				secondary: {
 					DEFAULT: 'hsl(var(--secondary))',
