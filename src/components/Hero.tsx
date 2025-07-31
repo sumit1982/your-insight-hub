@@ -17,15 +17,15 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center text-white">
         <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-          Transform Your Business
+          Expert Solutions for
           <span className="block text-transparent bg-gradient-to-r from-blue-300 to-blue-100 bg-clip-text">
-            With Expert Consulting
+            Your Business Success
           </span>
         </h1>
         
         <p className="text-xl md:text-2xl mb-8 text-blue-100 max-w-3xl mx-auto leading-relaxed">
-          We deliver strategic insights and practical solutions that drive growth, 
-          optimize operations, and unlock your organization's full potential.
+          From payroll and IT consulting to talent acquisition, we provide comprehensive 
+          business solutions that streamline operations and drive growth.
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">

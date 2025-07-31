@@ -20,7 +20,7 @@ const Navbar = () => {
           {/* Logo */}
           <div className="flex items-center">
             <span className="text-2xl font-bold text-consulting-navy">
-              ConsultPro
+              expertconsulting
             </span>
           </div>
 

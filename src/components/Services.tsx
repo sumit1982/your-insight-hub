@@ -1,43 +1,43 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { TrendingUp, Users, Cog, Target, BarChart3, Shield } from "lucide-react";
+import { Calculator, Monitor, Users, FileText, Shield, Headphones } from "lucide-react";
 
 const services = [
   {
-    icon: TrendingUp,
-    title: "Strategic Planning",
-    description: "Develop comprehensive strategies that align with your business objectives and drive sustainable growth.",
-    features: ["Market Analysis", "Competitive Intelligence", "Growth Roadmaps"]
+    icon: Calculator,
+    title: "Payroll Services",
+    description: "Comprehensive payroll management solutions to ensure accurate and timely employee compensation.",
+    features: ["Payroll Processing", "Tax Compliance", "Benefits Administration"]
+  },
+  {
+    icon: Monitor,
+    title: "IT Consulting", 
+    description: "Strategic technology consulting to optimize your IT infrastructure and digital transformation.",
+    features: ["System Integration", "Cloud Migration", "Cybersecurity"]
   },
   {
     icon: Users,
-    title: "Organizational Development", 
-    description: "Build high-performing teams and optimize organizational structure for maximum efficiency.",
-    features: ["Team Building", "Leadership Development", "Culture Transformation"]
+    title: "Talent Acquisition",
+    description: "Expert recruitment services to help you find and hire the best talent for your organization.",
+    features: ["Executive Search", "Recruitment Strategy", "Candidate Assessment"]
   },
   {
-    icon: Cog,
-    title: "Process Optimization",
-    description: "Streamline operations and eliminate inefficiencies to reduce costs and improve productivity.",
-    features: ["Workflow Analysis", "Automation Strategy", "Quality Improvement"]
-  },
-  {
-    icon: Target,
-    title: "Performance Management",
-    description: "Implement data-driven performance systems that track progress and drive accountability.",
-    features: ["KPI Development", "Dashboard Creation", "Performance Reviews"]
-  },
-  {
-    icon: BarChart3,
-    title: "Financial Analysis",
-    description: "Gain deep insights into your financial performance and identify opportunities for improvement.",
-    features: ["Financial Modeling", "Cost Analysis", "Investment Planning"]
+    icon: FileText,
+    title: "Business Process Consulting",
+    description: "Streamline your business operations and improve efficiency through process optimization.",
+    features: ["Process Mapping", "Workflow Automation", "Efficiency Analysis"]
   },
   {
     icon: Shield,
-    title: "Risk Management",
-    description: "Identify, assess, and mitigate risks to protect your business and ensure continuity.",
-    features: ["Risk Assessment", "Compliance", "Business Continuity"]
+    title: "Compliance & Risk",
+    description: "Ensure regulatory compliance and manage business risks with our expert guidance.",
+    features: ["Regulatory Compliance", "Risk Assessment", "Audit Support"]
+  },
+  {
+    icon: Headphones,
+    title: "Customer Experience",
+    description: "Enhance customer satisfaction and loyalty through strategic customer experience initiatives.",
+    features: ["CX Strategy", "Service Design", "Customer Analytics"]
   }
 ];
 
