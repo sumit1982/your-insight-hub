@@ -30,8 +30,8 @@ const Contact = () => {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-blue-100">info@consultingexperts.com</p>
-                <p className="text-blue-100">hello@consultingexperts.com</p>
+                <p className="text-blue-100">info@expertconsulting.shop</p>
+                <p className="text-blue-100">hello@expertconsulting.shop</p>
               </CardContent>
             </Card>
             
@@ -43,8 +43,8 @@ const Contact = () => {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-blue-100">+1 (555) 123-4567</p>
-                <p className="text-blue-100">+1 (555) 987-6543</p>
+                <p className="text-blue-100">+61478127730</p>
+                <p className="text-blue-100">+61422704057</p>
               </CardContent>
             </Card>
             
@@ -57,9 +57,9 @@ const Contact = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-blue-100">
-                  123 Business District<br />
-                  New York, NY 10001<br />
-                  United States
+                  12 Osborn grove<br />
+                  Pakenham VIC 3810<br />
+                  Australia
                 </p>
               </CardContent>
             </Card>
