@@ -19,122 +19,76 @@ const Contact = () => {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          {/* Contact Information */}
-          <div className="lg:col-span-1 space-y-6">
-            <Card className="bg-white/10 border-white/20 text-white">
-              <CardHeader>
-                <CardTitle className="flex items-center space-x-3">
-                  <Mail className="w-6 h-6 text-blue-300" />
-                  <span>Email Us</span>
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-blue-100">info@expertconsulting.shop</p>
-                <p className="text-blue-100">hello@expertconsulting.shop</p>
-              </CardContent>
-            </Card>
-            
-            <Card className="bg-white/10 border-white/20 text-white">
-              <CardHeader>
-                <CardTitle className="flex items-center space-x-3">
-                  <Phone className="w-6 h-6 text-blue-300" />
-                  <span>Call Us</span>
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-blue-100">+61478127730</p>
-                <p className="text-blue-100">+61422704057</p>
-              </CardContent>
-            </Card>
-            
-            <Card className="bg-white/10 border-white/20 text-white">
-              <CardHeader>
-                <CardTitle className="flex items-center space-x-3">
-                  <MapPin className="w-6 h-6 text-blue-300" />
-                  <span>Visit Us</span>
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-blue-100">
-                  12 Osborn grove<br />
-                  Pakenham VIC 3810<br />
-                  Australia
-                </p>
-              </CardContent>
-            </Card>
-            
-            <Card className="bg-white/10 border-white/20 text-white">
-              <CardHeader>
-                <CardTitle className="flex items-center space-x-3">
-                  <Clock className="w-6 h-6 text-blue-300" />
-                  <span>Business Hours</span>
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-blue-100">
-                  Monday - Friday: 9:00 AM - 6:00 PM<br />
-                  Saturday: 10:00 AM - 4:00 PM<br />
-                  Sunday: Closed
-                </p>
-              </CardContent>
-            </Card>
-          </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+          {/* Email Us */}
+          <Card className="bg-white/10 border-white/20 text-white transform hover:scale-105 transition-transform duration-300 hover:bg-white/15">
+            <CardHeader className="text-center">
+              <CardTitle className="flex flex-col items-center space-y-3">
+                <div className="w-16 h-16 bg-blue-300/20 rounded-full flex items-center justify-center">
+                  <Mail className="w-8 h-8 text-blue-300" />
+                </div>
+                <span>Email Us</span>
+              </CardTitle>
+            </CardHeader>
+            <CardContent className="text-center">
+              <p className="text-blue-100 mb-2">info@expertconsulting.shop</p>
+              <p className="text-blue-100">hello@expertconsulting.shop</p>
+            </CardContent>
+          </Card>
           
-          {/* Contact Form */}
-          <div className="lg:col-span-2">
-            <Card className="bg-white shadow-xl">
-              <CardHeader>
-                <CardTitle className="text-2xl text-consulting-navy">
-                  Send Us a Message
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-6">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <div className="space-y-2">
-                    <Label htmlFor="firstName">First Name</Label>
-                    <Input id="firstName" placeholder="John" />
-                  </div>
-                  <div className="space-y-2">
-                    <Label htmlFor="lastName">Last Name</Label>
-                    <Input id="lastName" placeholder="Doe" />
-                  </div>
+          {/* Call Us */}
+          <Card className="bg-white/10 border-white/20 text-white transform hover:scale-105 transition-transform duration-300 hover:bg-white/15">
+            <CardHeader className="text-center">
+              <CardTitle className="flex flex-col items-center space-y-3">
+                <div className="w-16 h-16 bg-green-300/20 rounded-full flex items-center justify-center">
+                  <Phone className="w-8 h-8 text-green-300" />
                 </div>
-                
-                <div className="space-y-2">
-                  <Label htmlFor="email">Email</Label>
-                  <Input id="email" type="email" placeholder="john.doe@company.com" />
+                <span>Call Us</span>
+              </CardTitle>
+            </CardHeader>
+            <CardContent className="text-center">
+              <p className="text-blue-100 mb-2">+61478127730</p>
+              <p className="text-blue-100">+61422704057</p>
+            </CardContent>
+          </Card>
+          
+          {/* Visit Us */}
+          <Card className="bg-white/10 border-white/20 text-white transform hover:scale-105 transition-transform duration-300 hover:bg-white/15">
+            <CardHeader className="text-center">
+              <CardTitle className="flex flex-col items-center space-y-3">
+                <div className="w-16 h-16 bg-purple-300/20 rounded-full flex items-center justify-center">
+                  <MapPin className="w-8 h-8 text-purple-300" />
                 </div>
-                
-                <div className="space-y-2">
-                  <Label htmlFor="company">Company</Label>
-                  <Input id="company" placeholder="Your Company Name" />
+                <span>Visit Us</span>
+              </CardTitle>
+            </CardHeader>
+            <CardContent className="text-center">
+              <p className="text-blue-100">
+                12 Osborn grove<br />
+                Pakenham VIC 3810<br />
+                Australia
+              </p>
+            </CardContent>
+          </Card>
+          
+          {/* Business Hours */}
+          <Card className="bg-white/10 border-white/20 text-white transform hover:scale-105 transition-transform duration-300 hover:bg-white/15">
+            <CardHeader className="text-center">
+              <CardTitle className="flex flex-col items-center space-y-3">
+                <div className="w-16 h-16 bg-orange-300/20 rounded-full flex items-center justify-center">
+                  <Clock className="w-8 h-8 text-orange-300" />
                 </div>
-                
-                <div className="space-y-2">
-                  <Label htmlFor="phone">Phone (Optional)</Label>
-                  <Input id="phone" type="tel" placeholder="+1 (555) 123-4567" />
-                </div>
-                
-                <div className="space-y-2">
-                  <Label htmlFor="message">Message</Label>
-                  <Textarea 
-                    id="message" 
-                    placeholder="Tell us about your business challenges and how we can help..."
-                    rows={6}
-                  />
-                </div>
-                
-                <Button className="w-full" variant="premium" size="lg">
-                  Send Message
-                </Button>
-                
-                <p className="text-sm text-consulting-gray text-center">
-                  We'll get back to you within 24 hours. For urgent matters, please call us directly.
-                </p>
-              </CardContent>
-            </Card>
-          </div>
+                <span>Business Hours</span>
+              </CardTitle>
+            </CardHeader>
+            <CardContent className="text-center">
+              <p className="text-blue-100 text-sm">
+                Mon - Fri: 9:00 AM - 6:00 PM<br />
+                Saturday: 10:00 AM - 4:00 PM<br />
+                Sunday: Closed
+              </p>
+            </CardContent>
+          </Card>
         </div>
       </div>
     </section>
