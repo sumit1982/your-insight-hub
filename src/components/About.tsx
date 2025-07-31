@@ -39,12 +39,6 @@ const About = () => {
           {/* Stats */}
           <div className="grid grid-cols-2 gap-8">
             <div className="text-center p-8 rounded-2xl bg-gradient-to-br from-consulting-light to-white shadow-md hover:shadow-lg transition-shadow duration-300">
-              <Award className="w-12 h-12 text-consulting-blue mx-auto mb-4" />
-              <div className="text-3xl font-bold text-consulting-navy mb-2">500+</div>
-              <div className="text-consulting-gray">Successful Projects</div>
-            </div>
-            
-            <div className="text-center p-8 rounded-2xl bg-gradient-to-br from-consulting-light to-white shadow-md hover:shadow-lg transition-shadow duration-300">
               <Globe className="w-12 h-12 text-consulting-blue mx-auto mb-4" />
               <div className="text-3xl font-bold text-consulting-navy mb-2">25+</div>
               <div className="text-consulting-gray">Industries Served</div>
@@ -61,6 +55,7 @@ const About = () => {
               <div className="text-3xl font-bold text-consulting-navy mb-2">98%</div>
               <div className="text-consulting-gray">Client Satisfaction</div>
             </div>
+            
           </div>
         </div>
       </div>
