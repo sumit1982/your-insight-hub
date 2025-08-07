@@ -1,9 +1,11 @@
 import { Button } from "@/components/ui/button";
-import { Menu, X } from "lucide-react";
+import { Menu, X, ChevronDown } from "lucide-react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isServicesOpen, setIsServicesOpen] = useState(false);
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -26,18 +28,73 @@ const Navbar = () => {
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8">
-            <button 
-              onClick={() => scrollToSection('home')}
+            <Link 
+              to="/"
               className="text-consulting-gray hover:text-consulting-blue transition-colors"
             >
               Home
-            </button>
-            <button 
-              onClick={() => scrollToSection('services')}
-              className="text-consulting-gray hover:text-consulting-blue transition-colors"
-            >
-              Services
-            </button>
+            </Link>
+            
+            {/* Services Dropdown */}
+            <div className="relative">
+              <button 
+                onClick={() => setIsServicesOpen(!isServicesOpen)}
+                className="flex items-center space-x-1 text-consulting-gray hover:text-consulting-blue transition-colors"
+              >
+                <span>Our Services</span>
+                <ChevronDown className="w-4 h-4" />
+              </button>
+              
+              {isServicesOpen && (
+                <div className="absolute top-full left-0 mt-2 w-64 bg-white shadow-lg rounded-lg border border-consulting-light z-50">
+                  <div className="py-2">
+                    <Link 
+                      to="/services/payroll"
+                      className="block px-4 py-2 text-consulting-gray hover:text-consulting-blue hover:bg-consulting-light transition-colors"
+                      onClick={() => setIsServicesOpen(false)}
+                    >
+                      Payroll Services
+                    </Link>
+                    <Link 
+                      to="/services/it-consulting"
+                      className="block px-4 py-2 text-consulting-gray hover:text-consulting-blue hover:bg-consulting-light transition-colors"
+                      onClick={() => setIsServicesOpen(false)}
+                    >
+                      IT Consulting
+                    </Link>
+                    <Link 
+                      to="/services/talent-acquisition"
+                      className="block px-4 py-2 text-consulting-gray hover:text-consulting-blue hover:bg-consulting-light transition-colors"
+                      onClick={() => setIsServicesOpen(false)}
+                    >
+                      Talent Acquisition
+                    </Link>
+                    <Link 
+                      to="/services/business-process"
+                      className="block px-4 py-2 text-consulting-gray hover:text-consulting-blue hover:bg-consulting-light transition-colors"
+                      onClick={() => setIsServicesOpen(false)}
+                    >
+                      Business Process Consulting
+                    </Link>
+                    <Link 
+                      to="/services/compliance-risk"
+                      className="block px-4 py-2 text-consulting-gray hover:text-consulting-blue hover:bg-consulting-light transition-colors"
+                      onClick={() => setIsServicesOpen(false)}
+                    >
+                      Compliance & Risk
+                    </Link>
+                    <Link 
+                      to="/services/customer-services"
+                      className="block px-4 py-2 text-consulting-gray hover:text-consulting-blue hover:bg-consulting-light transition-colors"
+                      onClick={() => setIsServicesOpen(false)}
+                    >
+                      Customer Services
+                    </Link>
+                  </div>
+                </div>
+              )}
+            </div>
+            
             <button 
               onClick={() => scrollToSection('about')}
               className="text-consulting-gray hover:text-consulting-blue transition-colors"
