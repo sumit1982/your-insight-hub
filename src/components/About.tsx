@@ -12,12 +12,12 @@ const About = () => {
               Why Choose Our Consulting Expertise?
             </h2>
             <p className="text-lg text-consulting-gray mb-8 leading-relaxed">
-              With over 15 years of experience across diverse industries, we bring proven methodologies 
+              With over 5 years of experience across diverse industries, we bring proven methodologies 
               and innovative solutions to every engagement. Our team of seasoned consultants has helped 
               hundreds of organizations achieve breakthrough results.
             </p>
             
-            <div className="space-y-4 mb-8">
+            <div className="space-y-4">
               {[
                 "Proven track record of delivering measurable results",
                 "Industry-leading expertise across multiple sectors", 
@@ -30,24 +30,17 @@ const About = () => {
                 </div>
               ))}
             </div>
-            
-            <Button variant="premium" size="lg" className="text-lg px-8 py-4">
-              Schedule a Consultation
-            </Button>
           </div>
           
           {/* Stats */}
           <div className="grid grid-cols-2 gap-8">
             <div className="text-center p-8 rounded-2xl bg-gradient-to-br from-consulting-light to-white shadow-md hover:shadow-lg transition-shadow duration-300">
-              <Globe className="w-12 h-12 text-consulting-blue mx-auto mb-4" />
-              <div className="text-3xl font-bold text-consulting-navy mb-2">10+</div>
-              <div className="text-consulting-gray">Industries Served</div>
-            </div>
-            
-            <div className="text-center p-8 rounded-2xl bg-gradient-to-br from-consulting-light to-white shadow-md hover:shadow-lg transition-shadow duration-300">
-              <Users2 className="w-12 h-12 text-consulting-blue mx-auto mb-4" />
-              <div className="text-3xl font-bold text-consulting-navy mb-2">50+</div>
-              <div className="text-consulting-gray">Expert Consultants</div>
+              <div className="flex items-center justify-center space-x-2 mb-4">
+                <Globe className="w-10 h-10 text-consulting-blue" />
+                <Users2 className="w-10 h-10 text-consulting-blue" />
+              </div>
+              <div className="text-3xl font-bold text-consulting-navy mb-2">10+ Industries</div>
+              <div className="text-consulting-gray">50+ Expert Consultants</div>
             </div>
             
             <div className="text-center p-8 rounded-2xl bg-gradient-to-br from-consulting-light to-white shadow-md hover:shadow-lg transition-shadow duration-300">
@@ -55,7 +48,6 @@ const About = () => {
               <div className="text-3xl font-bold text-consulting-navy mb-2">98%</div>
               <div className="text-consulting-gray">Client Satisfaction</div>
             </div>
-            
           </div>
         </div>
       </div>

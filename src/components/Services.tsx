@@ -1,43 +1,50 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Calculator, Monitor, Users, FileText, Shield, Headphones } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const services = [
   {
     icon: Calculator,
     title: "Payroll Services",
     description: "Comprehensive payroll management solutions to ensure accurate and timely employee compensation.",
-    features: ["Payroll Processing", "Tax Compliance", "Benefits Administration"]
+    features: ["Payroll Processing", "Tax Compliance", "Benefits Administration"],
+    link: "/services/payroll"
   },
   {
     icon: Monitor,
     title: "IT Consulting", 
     description: "Strategic technology consulting to optimize your IT infrastructure and digital transformation.",
-    features: ["System Integration", "Cloud Migration", "Cybersecurity"]
+    features: ["System Integration", "Cloud Migration", "Cybersecurity"],
+    link: "/services/it-consulting"
   },
   {
     icon: Users,
     title: "Talent Acquisition",
     description: "Expert recruitment services to help you find and hire the best talent for your organization.",
-    features: ["Executive Search", "Recruitment Strategy", "Candidate Assessment"]
+    features: ["Executive Search", "Recruitment Strategy", "Candidate Assessment"],
+    link: "/services/talent-acquisition"
   },
   {
     icon: FileText,
     title: "Business Process Consulting",
     description: "Streamline your business operations and improve efficiency through process optimization.",
-    features: ["Process Mapping", "Workflow Automation", "Efficiency Analysis"]
+    features: ["Process Mapping", "Workflow Automation", "Efficiency Analysis"],
+    link: "/services/business-process"
   },
   {
     icon: Shield,
     title: "Compliance & Risk",
     description: "Ensure regulatory compliance and manage business risks with our expert guidance.",
-    features: ["Regulatory Compliance", "Risk Assessment", "Audit Support"]
+    features: ["Regulatory Compliance", "Risk Assessment", "Audit Support"],
+    link: "/services/compliance-risk"
   },
   {
     icon: Headphones,
-    title: "Customer Experience",
+    title: "Customer Services",
     description: "Enhance customer satisfaction and loyalty through strategic customer experience initiatives.",
-    features: ["CX Strategy", "Service Design", "Customer Analytics"]
+    features: ["CX Strategy", "Service Design", "Customer Analytics"],
+    link: "/services/customer-services"
   }
 ];
 
@@ -80,9 +87,11 @@ const Services = () => {
                       </li>
                     ))}
                   </ul>
-                  <Button variant="outline" className="w-full group-hover:bg-consulting-blue group-hover:text-white transition-colors duration-300">
-                    Learn More
-                  </Button>
+                  <Link to={service.link}>
+                    <Button variant="outline" className="w-full group-hover:bg-consulting-blue group-hover:text-white transition-colors duration-300">
+                      Learn More
+                    </Button>
+                  </Link>
                 </CardContent>
               </Card>
             );

@@ -123,9 +123,11 @@ const BusinessProcessConsulting = () => {
           </div>
 
           <div className="text-center mt-12">
-            <Button size="lg" className="px-8 py-4">
-              Start Process Assessment
-            </Button>
+            <Link to="/#contact">
+              <Button size="lg" className="px-8 py-4">
+                Start Process Assessment
+              </Button>
+            </Link>
             <div className="mt-4">
               <Link to="/" className="text-consulting-blue hover:underline">
                 ← Back to Home
