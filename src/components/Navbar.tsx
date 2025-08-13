@@ -101,12 +101,12 @@ const Navbar = () => {
             >
               About
             </button>
-            <button 
-              onClick={() => scrollToSection('contact')}
+            <Link 
+              to="/contact"
               className="text-consulting-gray hover:text-consulting-blue transition-colors"
             >
               Contact
-            </button>
+            </Link>
             <Button variant="hero" size="sm">
               Get Started
             </Button>
@@ -145,12 +145,13 @@ const Navbar = () => {
               >
                 About
               </button>
-              <button 
-                onClick={() => scrollToSection('contact')}
+              <Link 
+                to="/contact"
                 className="block w-full text-left text-consulting-gray hover:text-consulting-blue transition-colors py-2"
+                onClick={() => setIsMenuOpen(false)}
               >
                 Contact
-              </button>
+              </Link>
               <Button variant="hero" size="sm" className="w-full">
                 Get Started
               </Button>

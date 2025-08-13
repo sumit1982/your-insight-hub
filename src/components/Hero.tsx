@@ -17,9 +17,8 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center text-white">
         <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-          Expert Solutions for
-          <span className="block text-transparent bg-gradient-to-r from-blue-300 to-blue-100 bg-clip-text">
-            Your Business Success
+          <span className="text-transparent bg-gradient-to-r from-blue-300 to-blue-100 bg-clip-text">
+            everystepconsulting
           </span>
         </h1>
         
@@ -27,15 +26,6 @@ const Hero = () => {
           From payroll and IT consulting to talent acquisition, we provide comprehensive 
           business solutions that streamline operations and drive growth.
         </p>
-        
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <Button variant="hero" size="lg" className="text-lg px-8 py-4">
-            Get Started Today
-          </Button>
-          <Button variant="outline" size="lg" className="text-lg px-8 py-4 border-white/20 text-white hover:bg-white/10">
-            Learn More
-          </Button>
-        </div>
         
         {/* Trust Indicators */}
         <div className="mt-16 flex flex-wrap justify-center items-center gap-8 text-blue-200">

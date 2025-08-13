@@ -123,7 +123,7 @@ const CustomerServices = () => {
           </div>
 
           <div className="text-center mt-12">
-            <Link to="/#contact">
+            <Link to="/contact">
               <Button size="lg" className="px-8 py-4">
                 Improve Customer Experience
               </Button>
