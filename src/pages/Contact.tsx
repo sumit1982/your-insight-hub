@@ -10,18 +10,7 @@ const Contact = () => {
   return (
     <div className="min-h-screen bg-background">
       {/* Header */}
-      <section className="pt-24 pb-16 bg-gradient-to-br from-consulting-light to-white">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center">
-            <h1 className="text-4xl md:text-6xl font-bold text-consulting-navy mb-6">
-              Contact Us
-            </h1>
-            <p className="text-xl text-consulting-gray max-w-3xl mx-auto leading-relaxed">
-              Ready to get started? Contact us today to discuss how we can help transform your business.
-            </p>
-          </div>
-        </div>
-      </section>
+
 
       {/* Contact Information */}
       <section className="py-20 bg-gradient-to-br from-consulting-navy to-consulting-blue">
@@ -42,14 +31,14 @@ const Contact = () => {
               <CardHeader className="text-center">
                 <CardTitle className="flex flex-col items-center space-y-3">
                   <div className="w-16 h-16 bg-blue-300/20 rounded-full flex items-center justify-center">
-                    <Mail className="w-8 h-8 text-blue-300" />
+                    <Mail className="w-15 h-15 text-blue-300" />
                   </div>
                   <span>Email Us</span>
                 </CardTitle>
               </CardHeader>
               <CardContent className="text-center">
-                <p className="text-blue-100 mb-2">info@expertconsulting.shop</p>
-                <p className="text-blue-100">hello@expertconsulting.shop</p>
+                <p className="text-blue-100 mb-2">info@everystepconsulting.com.au</p>
+                <p className="text-blue-100">hello@everystepconsulting.com.au</p>
               </CardContent>
             </Card>
             
@@ -81,7 +70,7 @@ const Contact = () => {
               </CardHeader>
               <CardContent className="text-center">
                 <p className="text-blue-100">
-                  12 Osborn grove<br />
+                  Osborn grove<br />
                   Pakenham VIC 3810<br />
                   Australia
                 </p>

@@ -22,7 +22,7 @@ const Navbar = () => {
           {/* Logo */}
           <div className="flex items-center">
             <span className="text-2xl font-bold text-consulting-navy">
-              expertconsulting
+              EveryStepConsulting
             </span>
           </div>
 
@@ -107,9 +107,6 @@ const Navbar = () => {
             >
               Contact
             </Link>
-            <Button variant="hero" size="sm">
-              Get Started
-            </Button>
           </div>
 
           {/* Mobile Menu Button */}
