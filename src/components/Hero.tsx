@@ -18,7 +18,7 @@ const Hero = () => {
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center text-white">
         <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
           <span className="text-transparent bg-gradient-to-r from-blue-300 to-blue-100 bg-clip-text">
-            everystepconsulting
+            Expert Solutions for Your Business Success
           </span>
         </h1>
         
