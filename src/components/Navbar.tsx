@@ -49,46 +49,60 @@ const Navbar = () => {
                 <div className="absolute top-full left-0 mt-2 w-64 bg-white shadow-lg rounded-lg border border-consulting-light z-50">
                   <div className="py-2">
                     <Link 
-                      to="/services/payroll"
+                      to="/services/ai-chatbots"
                       className="block px-4 py-2 text-consulting-gray hover:text-consulting-blue hover:bg-consulting-light transition-colors"
                       onClick={() => setIsServicesOpen(false)}
                     >
-                      Payroll Services
+                      AI Chatbots
                     </Link>
                     <Link 
-                      to="/services/it-consulting"
+                      to="/services/ai-call-agents"
                       className="block px-4 py-2 text-consulting-gray hover:text-consulting-blue hover:bg-consulting-light transition-colors"
                       onClick={() => setIsServicesOpen(false)}
                     >
-                      IT Consulting
+                      AI Call Agents
                     </Link>
                     <Link 
-                      to="/services/talent-acquisition"
+                      to="/services/custom-ai-agents"
                       className="block px-4 py-2 text-consulting-gray hover:text-consulting-blue hover:bg-consulting-light transition-colors"
                       onClick={() => setIsServicesOpen(false)}
                     >
-                      Talent Acquisition
+                      Custom AI Agents
                     </Link>
                     <Link 
-                      to="/services/business-process"
+                      to="/services/ai-agency-services"
                       className="block px-4 py-2 text-consulting-gray hover:text-consulting-blue hover:bg-consulting-light transition-colors"
                       onClick={() => setIsServicesOpen(false)}
                     >
-                      Business Process Consulting
+                      AI Agency Services
                     </Link>
                     <Link 
-                      to="/services/compliance-risk"
+                      to="/services/private-ai-setup"
                       className="block px-4 py-2 text-consulting-gray hover:text-consulting-blue hover:bg-consulting-light transition-colors"
                       onClick={() => setIsServicesOpen(false)}
                     >
-                      Compliance & Risk
+                      Private AI Setup
                     </Link>
                     <Link 
-                      to="/services/customer-services"
+                      to="/services/ai-workflow-automation"
                       className="block px-4 py-2 text-consulting-gray hover:text-consulting-blue hover:bg-consulting-light transition-colors"
                       onClick={() => setIsServicesOpen(false)}
                     >
-                      Customer Services
+                      AI Workflow Automation
+                    </Link>
+                    <Link 
+                      to="/services/ai-ecommerce"
+                      className="block px-4 py-2 text-consulting-gray hover:text-consulting-blue hover:bg-consulting-light transition-colors"
+                      onClick={() => setIsServicesOpen(false)}
+                    >
+                      AI for eCommerce
+                    </Link>
+                    <Link 
+                      to="/services/ai-development-platform"
+                      className="block px-4 py-2 text-consulting-gray hover:text-consulting-blue hover:bg-consulting-light transition-colors"
+                      onClick={() => setIsServicesOpen(false)}
+                    >
+                      AI Development Platform
                     </Link>
                   </div>
                 </div>

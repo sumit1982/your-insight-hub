@@ -1,50 +1,64 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Calculator, Monitor, Users, FileText, Shield, Headphones } from "lucide-react";
+import { MessageCircle, Phone, Bot, Briefcase, Shield, Workflow, ShoppingCart, Code } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const services = [
   {
-    icon: Calculator,
-    title: "Payroll Services",
-    description: "Comprehensive payroll management solutions to ensure accurate and timely employee compensation.",
-    features: ["Payroll Processing", "Tax Compliance", "Benefits Administration"],
-    link: "/services/payroll"
+    icon: MessageCircle,
+    title: "AI Chatbots",
+    description: "24/7 customer support, lead generation, and automated conversations.",
+    features: ["24/7 Customer Support", "Lead Generation", "Automated Conversations"],
+    link: "/services/ai-chatbots"
   },
   {
-    icon: Monitor,
-    title: "IT Consulting", 
-    description: "Strategic technology consulting to optimize your IT infrastructure and digital transformation.",
-    features: ["System Integration", "Cloud Migration", "Cybersecurity"],
-    link: "/services/it-consulting"
+    icon: Phone,
+    title: "AI Call Agents", 
+    description: "Automate phone calls to reduce costs, cut wait times, enhance customer service.",
+    features: ["Cost Reduction", "Enhanced Service", "No Wait Times"],
+    link: "/services/ai-call-agents"
   },
   {
-    icon: Users,
-    title: "Talent Acquisition",
-    description: "Expert recruitment services to help you find and hire the best talent for your organization.",
-    features: ["Executive Search", "Recruitment Strategy", "Candidate Assessment"],
-    link: "/services/talent-acquisition"
+    icon: Bot,
+    title: "Custom AI Agents",
+    description: "Custom-developed AI agents for task automation and customer interactions.",
+    features: ["Task Automation", "Custom Solutions", "Advanced Integration"],
+    link: "/services/custom-ai-agents"
   },
   {
-    icon: FileText,
-    title: "Business Process Consulting",
-    description: "Streamline your business operations and improve efficiency through process optimization.",
-    features: ["Process Mapping", "Workflow Automation", "Efficiency Analysis"],
-    link: "/services/business-process"
+    icon: Briefcase,
+    title: "AI Agency Services",
+    description: "Expert AI consulting, strategy, and development for your business.",
+    features: ["AI Strategy", "Expert Consulting", "Business Development"],
+    link: "/services/ai-agency-services"
   },
   {
     icon: Shield,
-    title: "Compliance & Risk",
-    description: "Ensure regulatory compliance and manage business risks with our expert guidance.",
-    features: ["Regulatory Compliance", "Risk Assessment", "Audit Support"],
-    link: "/services/compliance-risk"
+    title: "Private AI Setup",
+    description: "Managed dedicated AI solution hosting for compliance and data protection.",
+    features: ["Data Protection", "Compliance Ready", "Dedicated Hosting"],
+    link: "/services/private-ai-setup"
   },
   {
-    icon: Headphones,
-    title: "Customer Services",
-    description: "Enhance customer satisfaction and loyalty through strategic customer experience initiatives.",
-    features: ["CX Strategy", "Service Design", "Customer Analytics"],
-    link: "/services/customer-services"
+    icon: Workflow,
+    title: "AI Workflow Automation",
+    description: "Streamline workflows and automate business processes with AI automation.",
+    features: ["Process Automation", "Workflow Optimization", "Efficiency Gains"],
+    link: "/services/ai-workflow-automation"
+  },
+  {
+    icon: ShoppingCart,
+    title: "AI for eCommerce",
+    description: "Add advanced AI features on your Shopify & WooCommerce stores.",
+    features: ["Shopify Integration", "WooCommerce Support", "Advanced Features"],
+    link: "/services/ai-ecommerce"
+  },
+  {
+    icon: Code,
+    title: "AI Development Platform",
+    description: "Secure AI platform for fast, efficient deployment and automation.",
+    features: ["Fast Deployment", "Secure Platform", "Automated Solutions"],
+    link: "/services/ai-development-platform"
   }
 ];
 
@@ -54,11 +68,11 @@ const Services = () => {
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-consulting-navy mb-6">
-            Our Services
+            Artificial Intelligence
           </h2>
           <p className="text-xl text-consulting-gray max-w-3xl mx-auto">
-            We offer comprehensive consulting services designed to address your unique business challenges 
-            and accelerate your path to success.
+            Transform your business with cutting-edge AI solutions. From chatbots to automation, 
+            we deliver intelligent systems that enhance efficiency and customer experience.
           </p>
         </div>
         
