@@ -23,8 +23,8 @@ const Hero = () => {
         </h1>
         
         <p className="text-xl md:text-2xl mb-8 text-blue-100 max-w-3xl mx-auto leading-relaxed">
-          From payroll and IT consulting to talent acquisition, we provide comprehensive 
-          business solutions that streamline operations and drive growth.
+          From AI chatbots and workflow automation to e-commerce intelligence and custom AI development, we transform businesses 
+          with cutting-edge artificial intelligence solutions that reduce costs, boost efficiency, and accelerate growth.
         </p>
         
         {/* Trust Indicators */}
