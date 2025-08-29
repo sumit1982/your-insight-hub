@@ -87,9 +87,9 @@ const AIChatbots = () => {
           <p className="text-xl text-consulting-gray mb-8">
             Let's discuss how AI chatbots can transform your customer experience and boost your business efficiency.
           </p>
-          <Link to="/contact">
+          <Link to="/">
             <Button size="lg" className="px-8 py-4">
-              Contact Us Today
+              Back to Home
             </Button>
           </Link>
         </div>

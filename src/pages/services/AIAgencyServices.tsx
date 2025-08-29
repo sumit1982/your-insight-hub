@@ -87,9 +87,9 @@ const AIAgencyServices = () => {
           <p className="text-xl text-consulting-gray mb-8">
             Partner with our AI experts to develop and implement a comprehensive AI strategy for your business.
           </p>
-          <Link to="/contact">
+          <Link to="/">
             <Button size="lg" className="px-8 py-4">
-              Contact Us Today
+              Back to Home
             </Button>
           </Link>
         </div>

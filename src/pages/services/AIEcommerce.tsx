@@ -87,9 +87,9 @@ const AIEcommerce = () => {
           <p className="text-xl text-consulting-gray mb-8">
             Transform your e-commerce experience with AI-powered features that drive sales and customer satisfaction.
           </p>
-          <Link to="/contact">
+          <Link to="/">
             <Button size="lg" className="px-8 py-4">
-              Contact Us Today
+              Back to Home
             </Button>
           </Link>
         </div>

@@ -87,9 +87,9 @@ const AIWorkflowAutomation = () => {
           <p className="text-xl text-consulting-gray mb-8">
             Transform your business processes with intelligent AI automation that works seamlessly with your existing systems.
           </p>
-          <Link to="/contact">
+          <Link to="/">
             <Button size="lg" className="px-8 py-4">
-              Contact Us Today
+              Back to Home
             </Button>
           </Link>
         </div>
