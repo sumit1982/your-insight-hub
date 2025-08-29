@@ -1,11 +1,28 @@
-import { Button } from "@/components/ui/button";
 import { Menu, X, ChevronDown } from "lucide-react";
-import { useState } from "react";
+import { useState, useEffect, useLayoutEffect } from "react";
 import { Link } from "react-router-dom";
+
+import { Button } from "@/components/ui/button";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isServicesOpen, setIsServicesOpen] = useState(false);
+  const [isMounted, setIsMounted] = useState(false);
+  const [isDesktop, setIsDesktop] = useState(false);
+
+  // Use useLayoutEffect for immediate execution before paint
+  useLayoutEffect(() => {
+    const checkScreenSize = () => {
+      const isDesktopSize = window.innerWidth >= 768;
+      setIsDesktop(isDesktopSize);
+      setIsMounted(true);
+    };
+
+    checkScreenSize(); // Check initial size immediately
+    window.addEventListener("resize", checkScreenSize);
+
+    return () => window.removeEventListener("resize", checkScreenSize);
+  }, []);
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -27,110 +44,129 @@ const Navbar = () => {
             </span>
           </div>
 
-          {/* Desktop Menu */}
-          <div className="md:flex items-center space-x-8">
-            <button
-              onClick={() => scrollToSection("home")}
-              className="text-consulting-gray hover:text-consulting-blue transition-colors"
-            >
-              Home
-            </button>
-
-            {/* Our Services Dropdown */}
-            <div className="relative">
-              <button
-                onClick={() => setIsServicesOpen(!isServicesOpen)}
-                className="flex items-center space-x-1 text-consulting-gray hover:text-consulting-blue transition-colors"
+          {/* Show loading state until mounted */}
+          {!isMounted ? (
+            <div className="w-6 h-6 animate-pulse bg-consulting-light rounded"></div>
+          ) : (
+            <>
+              {/* Desktop Menu - Force visibility after mount */}
+              <div
+                className={`navbar-desktop-menu items-center space-x-8 transition-all duration-200 ${
+                  isMounted ? (isDesktop ? "flex" : "hidden") : ""
+                }`}
               >
-                <span>Our Services</span>
-                <ChevronDown className="w-4 h-4" />
-              </button>
+                <button
+                  onClick={() => scrollToSection("home")}
+                  className="text-consulting-gray hover:text-consulting-blue transition-colors"
+                >
+                  Home
+                </button>
 
-              {isServicesOpen && (
-                <div className="absolute top-full left-0 mt-2 w-64 bg-white shadow-lg rounded-lg border border-consulting-light z-50">
-                  <div className="py-2">
-                    <button
-                      onClick={() => scrollToSection("services")}
-                      className="block w-full text-left px-4 py-2 text-consulting-gray hover:text-consulting-blue hover:bg-consulting-light transition-colors"
-                    >
-                      AI Chatbots
-                    </button>
-                    <button
-                      onClick={() => scrollToSection("services")}
-                      className="block w-full text-left px-4 py-2 text-consulting-gray hover:text-consulting-blue hover:bg-consulting-light transition-colors"
-                    >
-                      AI Call Agents
-                    </button>
-                    <button
-                      onClick={() => scrollToSection("services")}
-                      className="block w-full text-left px-4 py-2 text-consulting-gray hover:text-consulting-blue hover:bg-consulting-light transition-colors"
-                    >
-                      Custom AI Agents
-                    </button>
-                    <button
-                      onClick={() => scrollToSection("services")}
-                      className="block w-full text-left px-4 py-2 text-consulting-gray hover:text-consulting-blue hover:bg-consulting-light transition-colors"
-                    >
-                      AI Agency Services
-                    </button>
-                    <button
-                      onClick={() => scrollToSection("services")}
-                      className="block w-full text-left px-4 py-2 text-consulting-gray hover:text-consulting-blue hover:bg-consulting-light transition-colors"
-                    >
-                      Private AI Setup
-                    </button>
-                    <button
-                      onClick={() => scrollToSection("services")}
-                      className="block w-full text-left px-4 py-2 text-consulting-gray hover:text-consulting-blue hover:bg-consulting-light transition-colors"
-                    >
-                      AI Workflow Automation
-                    </button>
-                    <button
-                      onClick={() => scrollToSection("services")}
-                      className="block w-full text-left px-4 py-2 text-consulting-gray hover:text-consulting-blue hover:bg-consulting-light transition-colors"
-                    >
-                      AI for eCommerce
-                    </button>
-                    <button
-                      onClick={() => scrollToSection("services")}
-                      className="block w-full text-left px-4 py-2 text-consulting-gray hover:text-consulting-blue hover:bg-consulting-light transition-colors"
-                    >
-                      AI Development Platform
-                    </button>
-                  </div>
+                {/* Our Services Dropdown */}
+                <div className="relative">
+                  <button
+                    onClick={() => setIsServicesOpen(!isServicesOpen)}
+                    className="flex items-center space-x-1 text-consulting-gray hover:text-consulting-blue transition-colors"
+                  >
+                    <span>Our Services</span>
+                    <ChevronDown className="w-4 h-4" />
+                  </button>
+
+                  {isServicesOpen && (
+                    <div className="absolute top-full left-0 mt-2 w-64 bg-white shadow-lg rounded-lg border border-consulting-light z-50">
+                      <div className="py-2">
+                        <button
+                          onClick={() => scrollToSection("services")}
+                          className="block w-full text-left px-4 py-2 text-consulting-gray hover:text-consulting-blue hover:bg-consulting-light transition-colors"
+                        >
+                          AI Chatbots
+                        </button>
+                        <button
+                          onClick={() => scrollToSection("services")}
+                          className="block w-full text-left px-4 py-2 text-consulting-gray hover:text-consulting-blue hover:bg-consulting-light transition-colors"
+                        >
+                          AI Call Agents
+                        </button>
+                        <button
+                          onClick={() => scrollToSection("services")}
+                          className="block w-full text-left px-4 py-2 text-consulting-gray hover:text-consulting-blue hover:bg-consulting-light transition-colors"
+                        >
+                          Custom AI Agents
+                        </button>
+                        <button
+                          onClick={() => scrollToSection("services")}
+                          className="block w-full text-left px-4 py-2 text-consulting-gray hover:text-consulting-blue hover:bg-consulting-light transition-colors"
+                        >
+                          AI Agency Services
+                        </button>
+                        <button
+                          onClick={() => scrollToSection("services")}
+                          className="block w-full text-left px-4 py-2 text-consulting-gray hover:text-consulting-blue hover:bg-consulting-light transition-colors"
+                        >
+                          Private AI Setup
+                        </button>
+                        <button
+                          onClick={() => scrollToSection("services")}
+                          className="block w-full text-left px-4 py-2 text-consulting-gray hover:text-consulting-blue hover:bg-consulting-light transition-colors"
+                        >
+                          AI Workflow Automation
+                        </button>
+                        <button
+                          onClick={() => scrollToSection("services")}
+                          className="block w-full text-left px-4 py-2 text-consulting-gray hover:text-consulting-blue hover:bg-consulting-light transition-colors"
+                        >
+                          AI for eCommerce
+                        </button>
+                        <button
+                          onClick={() => scrollToSection("services")}
+                          className="block w-full text-left px-4 py-2 text-consulting-gray hover:text-consulting-blue hover:bg-consulting-light transition-colors"
+                        >
+                          AI Development Platform
+                        </button>
+                      </div>
+                    </div>
+                  )}
                 </div>
-              )}
-            </div>
 
-            <button
-              onClick={() => scrollToSection("about")}
-              className="text-consulting-gray hover:text-consulting-blue transition-colors"
-            >
-              About
-            </button>
+                <button
+                  onClick={() => scrollToSection("about")}
+                  className="text-consulting-gray hover:text-consulting-blue transition-colors"
+                >
+                  About
+                </button>
 
-            <Link
-              to="/contact"
-              className="text-consulting-gray hover:text-consulting-blue transition-colors"
-            >
-              Contact
-            </Link>
-          </div>
+                <Link
+                  to="/contact"
+                  className="text-consulting-gray hover:text-consulting-blue transition-colors"
+                >
+                  Contact
+                </Link>
+              </div>
 
-          {/* Mobile Menu Button */}
-          <div className="md:hidden">
-            <button
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-consulting-gray hover:text-consulting-blue"
-            >
-              {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-            </button>
-          </div>
+              {/* Mobile Menu Button */}
+              <div
+                className={`navbar-mobile-btn ${
+                  isMounted ? (!isDesktop ? "block" : "hidden") : ""
+                }`}
+              >
+                <button
+                  onClick={() => setIsMenuOpen(!isMenuOpen)}
+                  className="text-consulting-gray hover:text-consulting-blue"
+                >
+                  {isMenuOpen ? (
+                    <X className="w-6 h-6" />
+                  ) : (
+                    <Menu className="w-6 h-6" />
+                  )}
+                </button>
+              </div>
+            </>
+          )}
         </div>
 
         {/* Mobile Menu */}
-        {isMenuOpen && (
-          <div className="md:hidden py-4 border-t border-consulting-light">
+        {isMenuOpen && isMounted && !isDesktop && (
+          <div className="py-4 border-t border-consulting-light">
             <div className="space-y-4">
               <button
                 onClick={() => scrollToSection("home")}

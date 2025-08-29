@@ -69,6 +69,32 @@ All colors MUST be HSL.
     --sidebar-border: 220 13% 91%;
 
     --sidebar-ring: 217.2 91.2% 59.8%;
+    
+    /* Navbar fallback for desktop visibility */
+    --nav-desktop-display: flex;
+  }
+  
+  /* Hide desktop nav on mobile by default */
+  @media (max-width: 767px) {
+    :root {
+      --nav-desktop-display: none;
+    }
+  }
+  
+  /* Ensure navbar desktop menu is visible on load for desktop screens */
+  @media (min-width: 768px) {
+    .navbar-desktop-menu {
+      display: flex !important;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .navbar-desktop-menu {
+      display: none !important;
+    }
+    .navbar-mobile-btn {
+      display: block !important;
+    }
   }
 
   .dark {
