@@ -71,8 +71,8 @@ const Services = () => {
             Artificial Intelligence
           </h2>
           <p className="text-xl text-consulting-gray max-w-3xl mx-auto">
-            Transform your business with cutting-edge AI solutions. From chatbots to automation, 
-            we deliver intelligent systems that enhance efficiency and customer experience.
+            Accelerate your business growth with AI-powered automation, customer engagement solutions, 
+            and intelligent systems that streamline operations across healthcare, finance, e-commerce, and beyond.
           </p>
         </div>
         
