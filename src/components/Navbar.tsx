@@ -28,7 +28,7 @@ const Navbar = () => {
           </div>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="md:flex items-center space-x-8">
             <button
               onClick={() => scrollToSection("home")}
               className="text-consulting-gray hover:text-consulting-blue transition-colors"
