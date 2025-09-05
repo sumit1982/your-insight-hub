@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isServicesOpen, setIsServicesOpen] = useState(false);
+  const [isMobileServicesOpen, setIsMobileServicesOpen] = useState(false);
   const [isMounted, setIsMounted] = useState(false);
   const [isDesktop, setIsDesktop] = useState(false);
 
@@ -75,54 +76,62 @@ const Navbar = () => {
                   {isServicesOpen && (
                     <div className="absolute top-full left-0 mt-2 w-64 bg-white shadow-lg rounded-lg border border-consulting-light z-50">
                       <div className="py-2">
-                        <button
-                          onClick={() => scrollToSection("services")}
+                        <Link
+                          to="/services/ai-chatbots"
+                          onClick={() => setIsServicesOpen(false)}
                           className="block w-full text-left px-4 py-2 text-consulting-gray hover:text-consulting-blue hover:bg-consulting-light transition-colors"
                         >
                           AI Chatbots
-                        </button>
-                        <button
-                          onClick={() => scrollToSection("services")}
+                        </Link>
+                        <Link
+                          to="/services/ai-call-agents"
+                          onClick={() => setIsServicesOpen(false)}
                           className="block w-full text-left px-4 py-2 text-consulting-gray hover:text-consulting-blue hover:bg-consulting-light transition-colors"
                         >
                           AI Call Agents
-                        </button>
-                        <button
-                          onClick={() => scrollToSection("services")}
+                        </Link>
+                        <Link
+                          to="/services/custom-ai-agents"
+                          onClick={() => setIsServicesOpen(false)}
                           className="block w-full text-left px-4 py-2 text-consulting-gray hover:text-consulting-blue hover:bg-consulting-light transition-colors"
                         >
                           Custom AI Agents
-                        </button>
-                        <button
-                          onClick={() => scrollToSection("services")}
+                        </Link>
+                        <Link
+                          to="/services/ai-agency-services"
+                          onClick={() => setIsServicesOpen(false)}
                           className="block w-full text-left px-4 py-2 text-consulting-gray hover:text-consulting-blue hover:bg-consulting-light transition-colors"
                         >
                           AI Agency Services
-                        </button>
-                        <button
-                          onClick={() => scrollToSection("services")}
+                        </Link>
+                        <Link
+                          to="/services/private-ai-setup"
+                          onClick={() => setIsServicesOpen(false)}
                           className="block w-full text-left px-4 py-2 text-consulting-gray hover:text-consulting-blue hover:bg-consulting-light transition-colors"
                         >
                           Private AI Setup
-                        </button>
-                        <button
-                          onClick={() => scrollToSection("services")}
+                        </Link>
+                        <Link
+                          to="/services/ai-workflow-automation"
+                          onClick={() => setIsServicesOpen(false)}
                           className="block w-full text-left px-4 py-2 text-consulting-gray hover:text-consulting-blue hover:bg-consulting-light transition-colors"
                         >
                           AI Workflow Automation
-                        </button>
-                        <button
-                          onClick={() => scrollToSection("services")}
+                        </Link>
+                        <Link
+                          to="/services/ai-ecommerce"
+                          onClick={() => setIsServicesOpen(false)}
                           className="block w-full text-left px-4 py-2 text-consulting-gray hover:text-consulting-blue hover:bg-consulting-light transition-colors"
                         >
                           AI for eCommerce
-                        </button>
-                        <button
-                          onClick={() => scrollToSection("services")}
+                        </Link>
+                        <Link
+                          to="/services/ai-development-platform"
+                          onClick={() => setIsServicesOpen(false)}
                           className="block w-full text-left px-4 py-2 text-consulting-gray hover:text-consulting-blue hover:bg-consulting-light transition-colors"
                         >
                           AI Development Platform
-                        </button>
+                        </Link>
                       </div>
                     </div>
                   )}
@@ -175,11 +184,72 @@ const Navbar = () => {
                 Home
               </button>
               <button
-                onClick={() => scrollToSection("services")}
-                className="block w-full text-left text-consulting-gray hover:text-consulting-blue transition-colors py-2"
+                onClick={() => setIsMobileServicesOpen(!isMobileServicesOpen)}
+                className="flex w-full items-center justify-between text-left text-consulting-gray hover:text-consulting-blue transition-colors py-2"
               >
-                Our Services
+                <span>Our Services</span>
+                <ChevronDown className={`w-4 h-4 transition-transform ${isMobileServicesOpen ? 'rotate-180' : ''}`} />
               </button>
+              {isMobileServicesOpen && (
+                <div className="pl-4 space-y-1">
+                  <Link
+                    to="/services/ai-chatbots"
+                    className="block w-full text-left text-consulting-gray hover:text-consulting-blue transition-colors py-2"
+                    onClick={() => { setIsMenuOpen(false); setIsMobileServicesOpen(false); }}
+                  >
+                    AI Chatbots
+                  </Link>
+                  <Link
+                    to="/services/ai-call-agents"
+                    className="block w-full text-left text-consulting-gray hover:text-consulting-blue transition-colors py-2"
+                    onClick={() => { setIsMenuOpen(false); setIsMobileServicesOpen(false); }}
+                  >
+                    AI Call Agents
+                  </Link>
+                  <Link
+                    to="/services/custom-ai-agents"
+                    className="block w-full text-left text-consulting-gray hover:text-consulting-blue transition-colors py-2"
+                    onClick={() => { setIsMenuOpen(false); setIsMobileServicesOpen(false); }}
+                  >
+                    Custom AI Agents
+                  </Link>
+                  <Link
+                    to="/services/ai-agency-services"
+                    className="block w-full text-left text-consulting-gray hover:text-consulting-blue transition-colors py-2"
+                    onClick={() => { setIsMenuOpen(false); setIsMobileServicesOpen(false); }}
+                  >
+                    AI Agency Services
+                  </Link>
+                  <Link
+                    to="/services/private-ai-setup"
+                    className="block w-full text-left text-consulting-gray hover:text-consulting-blue transition-colors py-2"
+                    onClick={() => { setIsMenuOpen(false); setIsMobileServicesOpen(false); }}
+                  >
+                    Private AI Setup
+                  </Link>
+                  <Link
+                    to="/services/ai-workflow-automation"
+                    className="block w-full text-left text-consulting-gray hover:text-consulting-blue transition-colors py-2"
+                    onClick={() => { setIsMenuOpen(false); setIsMobileServicesOpen(false); }}
+                  >
+                    AI Workflow Automation
+                  </Link>
+                  <Link
+                    to="/services/ai-ecommerce"
+                    className="block w-full text-left text-consulting-gray hover:text-consulting-blue transition-colors py-2"
+                    onClick={() => { setIsMenuOpen(false); setIsMobileServicesOpen(false); }}
+                  >
+                    AI for eCommerce
+                  </Link>
+                  <Link
+                    to="/services/ai-development-platform"
+                    className="block w-full text-left text-consulting-gray hover:text-consulting-blue transition-colors py-2"
+                    onClick={() => { setIsMenuOpen(false); setIsMobileServicesOpen(false); }}
+                  >
+                    AI Development Platform
+                  </Link>
+                </div>
+              )}
               <button
                 onClick={() => scrollToSection("about")}
                 className="block w-full text-left text-consulting-gray hover:text-consulting-blue transition-colors py-2"
