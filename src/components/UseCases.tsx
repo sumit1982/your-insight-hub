@@ -1,16 +1,11 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { MessageCircle, Calendar, Home, Dumbbell, UtensilsCrossed, ShoppingCart } from "lucide-react";
+import { MessageCircle, Calendar, Home, Dumbbell, UtensilsCrossed } from "lucide-react";
 
 const useCases = [
   {
     icon: MessageCircle,
     title: "Customer Service Chatbots",
     description: "Efficiently handle enquiries, provide instant responses, resolve common issues, and escalate complex cases, ensuring a seamless and satisfying customer experience."
-  },
-  {
-    icon: ShoppingCart,
-    title: "E-commerce Chatbots",
-    description: "Assist customers in real-time by answering queries, recommending products, processing orders, and providing personalised shopping experiences, enhancing customer satisfaction and increasing sales."
   },
   {
     icon: Calendar,
