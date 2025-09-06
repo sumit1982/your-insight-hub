@@ -98,13 +98,6 @@ const Navbar = () => {
                           Custom AI Agents
                         </Link>
                         <Link
-                          to="/services/ai-agency-services"
-                          onClick={() => setIsServicesOpen(false)}
-                          className="block w-full text-left px-4 py-2 text-consulting-gray hover:text-consulting-blue hover:bg-consulting-light transition-colors"
-                        >
-                          AI Agency Services
-                        </Link>
-                        <Link
                           to="/services/private-ai-setup"
                           onClick={() => setIsServicesOpen(false)}
                           className="block w-full text-left px-4 py-2 text-consulting-gray hover:text-consulting-blue hover:bg-consulting-light transition-colors"
@@ -124,13 +117,6 @@ const Navbar = () => {
                           className="block w-full text-left px-4 py-2 text-consulting-gray hover:text-consulting-blue hover:bg-consulting-light transition-colors"
                         >
                           AI for eCommerce
-                        </Link>
-                        <Link
-                          to="/services/ai-development-platform"
-                          onClick={() => setIsServicesOpen(false)}
-                          className="block w-full text-left px-4 py-2 text-consulting-gray hover:text-consulting-blue hover:bg-consulting-light transition-colors"
-                        >
-                          AI Development Platform
                         </Link>
                       </div>
                     </div>
@@ -214,13 +200,6 @@ const Navbar = () => {
                     Custom AI Agents
                   </Link>
                   <Link
-                    to="/services/ai-agency-services"
-                    className="block w-full text-left text-consulting-gray hover:text-consulting-blue transition-colors py-2"
-                    onClick={() => { setIsMenuOpen(false); setIsMobileServicesOpen(false); }}
-                  >
-                    AI Agency Services
-                  </Link>
-                  <Link
                     to="/services/private-ai-setup"
                     className="block w-full text-left text-consulting-gray hover:text-consulting-blue transition-colors py-2"
                     onClick={() => { setIsMenuOpen(false); setIsMobileServicesOpen(false); }}
@@ -240,13 +219,6 @@ const Navbar = () => {
                     onClick={() => { setIsMenuOpen(false); setIsMobileServicesOpen(false); }}
                   >
                     AI for eCommerce
-                  </Link>
-                  <Link
-                    to="/services/ai-development-platform"
-                    className="block w-full text-left text-consulting-gray hover:text-consulting-blue transition-colors py-2"
-                    onClick={() => { setIsMenuOpen(false); setIsMobileServicesOpen(false); }}
-                  >
-                    AI Development Platform
                   </Link>
                 </div>
               )}

@@ -22,14 +22,14 @@ const Index = () => {
         <Hero />
       </div>
 
-      {/* Services Section */}
-      <div id="services">
-        <Services />
-      </div>
-
       {/* Use Cases Section */}
       <div id="use-cases">
         <UseCases />
+      </div>
+
+      {/* Services Section */}
+      <div id="services">
+        <Services />
       </div>
 
       {/* About Section */}

@@ -26,13 +26,6 @@ const services = [
     link: "/services/custom-ai-agents"
   },
   {
-    icon: Briefcase,
-    title: "AI Agency Services",
-    description: "Expert AI consulting, strategy, and development for your business.",
-    features: ["AI Strategy", "Expert Consulting", "Business Development"],
-    link: "/services/ai-agency-services"
-  },
-  {
     icon: Shield,
     title: "Private AI Setup",
     description: "Managed dedicated AI solution hosting for compliance and data protection.",
@@ -52,13 +45,6 @@ const services = [
     description: "Add advanced AI features on your Shopify & WooCommerce stores.",
     features: ["Shopify Integration", "WooCommerce Support", "Advanced Features"],
     link: "/services/ai-ecommerce"
-  },
-  {
-    icon: Code,
-    title: "AI Development Platform",
-    description: "Secure AI platform for fast, efficient deployment and automation.",
-    features: ["Fast Deployment", "Secure Platform", "Automated Solutions"],
-    link: "/services/ai-development-platform"
   }
 ];
 
