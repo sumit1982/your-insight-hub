@@ -29,7 +29,7 @@ const Contact = () => {
     const email = String(fd.get("email") || "");
     const phone = String(fd.get("phone") || "");
     const message = String(fd.get("message") || "");
-    const subject = `New website inquiry from ${firstName} ${lastName}`;
+    const subject = `There is a new inquiry sumitted on your website by ${firstName} ${lastName}`;
     
     // Replace with your actual webhook URL
     const webhookUrl = "https://hook.eu2.make.com/wrwvbn6ba7xkmwtfw2x6k4wl678amk5s"; 
