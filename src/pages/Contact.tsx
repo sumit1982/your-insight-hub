@@ -73,7 +73,7 @@ const Contact = () => {
         return;
       }
 
-      setSuccessMessage("Thank you! Your message has been sent. Someone will get in touch with you soon.");
+      setSuccessMessage("Thank you! Your message has been sent. Someone will get in touch with you soon to capture further details on your needs.");
       form.reset();
     } catch (err) {
       console.error(err);
