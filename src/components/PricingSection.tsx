@@ -1,8 +1,10 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Check, Phone, Info } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const PricingSection = () => {
+  const navigate = useNavigate();
   const features = [
     "Choice of Australian AI voices",
     "FAQ automation", 
@@ -70,12 +72,7 @@ const PricingSection = () => {
               <Button 
                 size="lg"
                 className="bg-consulting-blue hover:bg-primary-hover text-white px-8 py-3 text-lg font-semibold"
-                onClick={() => {
-                  const contactSection = document.getElementById('contact');
-                  if (contactSection) {
-                    contactSection.scrollIntoView({ behavior: 'smooth' });
-                  }
-                }}
+                onClick={() => navigate('/contact')}
               >
                 Get Started Today
               </Button>
