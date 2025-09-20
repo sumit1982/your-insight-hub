@@ -3,6 +3,7 @@ import Hero from "@/components/Hero";
 import Services from "@/components/Services";
 import UseCases from "@/components/UseCases";
 import About from "@/components/About";
+import PricingSection from "@/components/PricingSection";
 
 const Index = () => {
   console.log("🚀 Index component is rendering");
@@ -35,6 +36,11 @@ const Index = () => {
       {/* About Section */}
       <div id="about">
         <About />
+      </div>
+
+      {/* Pricing Section */}
+      <div id="pricing">
+        <PricingSection />
       </div>
 
       {/* Vapi widget loads separately in index.html */}
