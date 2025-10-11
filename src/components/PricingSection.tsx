@@ -20,10 +20,9 @@ const PricingSection = () => {
   return (
     <section className="py-24 bg-consulting-light">
       <div className="max-w-7xl mx-auto px-6">
-        <Card className="bg-white shadow-xl border-0 overflow-hidden">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
             {/* Left: AI Call Starter */}
-            <div className="p-8 lg:p-12 border-r border-gray-100">
+            <Card className="bg-white shadow-xl border-0 overflow-hidden p-8 lg:p-12">
               <div className="mb-8">
                 <div className="w-20 h-20 bg-gradient-to-br from-consulting-blue to-primary rounded-2xl mb-6 flex items-center justify-center">
                   <Phone className="w-10 h-10 text-white" />
@@ -75,10 +74,10 @@ const PricingSection = () => {
               >
                 Get Started Today
               </Button>
-            </div>
+            </Card>
 
             {/* Right: Why Choose Our Consulting Expertise */}
-            <div className="p-8 lg:p-12 bg-gradient-to-br from-white to-consulting-light/30">
+            <Card className="bg-gradient-to-br from-white to-consulting-light/30 shadow-xl border-0 overflow-hidden p-8 lg:p-12">
               <h2 className="text-3xl md:text-4xl font-bold text-consulting-navy mb-6">
                 Why Choose Our Consulting Expertise?
               </h2>
@@ -119,9 +118,8 @@ const PricingSection = () => {
                   <div className="text-sm text-consulting-gray">Client Satisfaction</div>
                 </div>
               </div>
-            </div>
+            </Card>
           </div>
-        </Card>
       </div>
     </section>
   );
