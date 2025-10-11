@@ -1,6 +1,6 @@
-import { Card, CardContent, CardHeader } from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Check, Phone, Info, CheckCircle, Globe, Users2 } from "lucide-react";
+import { Check, Phone, CheckCircle, Globe, Users2 } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
 const PricingSection = () => {
@@ -20,23 +20,24 @@ const PricingSection = () => {
   return (
     <section className="py-24 bg-consulting-light">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-            {/* Left: AI Call Starter */}
-            <Card className="bg-white shadow-xl border-0 overflow-hidden p-8 lg:p-12">
-              <div className="mb-8">
-                <div className="w-20 h-20 bg-gradient-to-br from-consulting-blue to-primary rounded-2xl mb-6 flex items-center justify-center">
-                  <Phone className="w-10 h-10 text-white" />
-                </div>
-                
-                <h2 className="text-3xl md:text-4xl font-bold text-consulting-navy mb-4">
-                  AI Call Starter
-                </h2>
-                
-                <p className="text-lg text-consulting-gray mb-6">
-                  For essential features to automate your customer calls
-                </p>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          {/* Left: AI Call Starter */}
+          <Card className="group hover:shadow-xl transition-all duration-300 border-0 shadow-lg bg-white">
+            <CardHeader className="pb-4">
+              <div className="w-20 h-20 bg-gradient-to-br from-consulting-blue to-primary rounded-2xl mb-6 flex items-center justify-center">
+                <Phone className="w-10 h-10 text-white" />
               </div>
+              
+              <CardTitle className="text-3xl md:text-4xl font-bold text-consulting-navy mb-4">
+                AI Call Starter
+              </CardTitle>
+              
+              <CardDescription className="text-lg text-consulting-gray">
+                For essential features to automate your customer calls
+              </CardDescription>
+            </CardHeader>
 
+            <CardContent>
               <div className="mb-6">
                 <div className="text-5xl font-bold text-primary mb-2">
                   59¢ 
@@ -62,7 +63,6 @@ const PricingSection = () => {
                       <Check className="w-3 h-3 text-white" />
                     </div>
                     <span className="text-consulting-navy text-sm">{feature}</span>
-                    <Info className="w-4 h-4 text-consulting-gray ml-auto" />
                   </div>
                 ))}
               </div>
@@ -74,19 +74,23 @@ const PricingSection = () => {
               >
                 Get Started Today
               </Button>
-            </Card>
+            </CardContent>
+          </Card>
 
-            {/* Right: Why Choose Our Consulting Expertise */}
-            <Card className="bg-gradient-to-br from-white to-consulting-light/30 shadow-xl border-0 overflow-hidden p-8 lg:p-12">
-              <h2 className="text-3xl md:text-4xl font-bold text-consulting-navy mb-6">
+          {/* Right: Why Choose Our Consulting Expertise */}
+          <Card className="group hover:shadow-xl transition-all duration-300 border-0 shadow-lg bg-gradient-to-br from-white to-consulting-light/30">
+            <CardHeader className="pb-4">
+              <CardTitle className="text-3xl md:text-4xl font-bold text-consulting-navy mb-4">
                 Why Choose Our Consulting Expertise?
-              </h2>
-              <p className="text-lg text-consulting-gray mb-8 leading-relaxed">
+              </CardTitle>
+              <CardDescription className="text-lg text-consulting-gray leading-relaxed">
                 With over 5 years of experience across diverse industries, we bring proven methodologies 
                 and innovative solutions to every engagement. Our team of seasoned consultants has helped 
                 hundreds of organizations achieve breakthrough results.
-              </p>
-              
+              </CardDescription>
+            </CardHeader>
+            
+            <CardContent>
               <div className="space-y-4 mb-12">
                 {[
                   "Proven track record of delivering measurable results",
@@ -118,8 +122,9 @@ const PricingSection = () => {
                   <div className="text-sm text-consulting-gray">Client Satisfaction</div>
                 </div>
               </div>
-            </Card>
-          </div>
+            </CardContent>
+          </Card>
+        </div>
       </div>
     </section>
   );
