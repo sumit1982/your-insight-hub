@@ -47,7 +47,7 @@ const PricingSection = () => {
               
               <div className="bg-consulting-light rounded-lg p-4 mb-6">
                 <p className="text-consulting-navy text-base">
-                  Plus a <span className="font-bold text-primary">$1,500 onwards</span> one-off setup for an AI agent 
+                  Plus a <span className="font-bold text-primary">$1,199 AUD onwards</span> one-off setup with Monthly retainer cost stating at <span className="font-bold text-primary">$299 AUD onwards</span> for an AI agent 
                   trained on a custom knowledge base of your business
                 </p>
               </div>

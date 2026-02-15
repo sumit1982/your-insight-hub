@@ -31,8 +31,8 @@ const Contact = () => {
               </CardTitle>
             </CardHeader>
             <CardContent className="text-center">
-              <p className="text-blue-100 mb-2">info@expertconsulting.shop</p>
-              <p className="text-blue-100">hello@expertconsulting.shop</p>
+              <p className="text-blue-100 mb-2">sales@everystepconsulting.com.au</p>
+              <p className="text-blue-100">support@everystepconsulting.com.au</p>
             </CardContent>
           </Card>
           
@@ -47,8 +47,7 @@ const Contact = () => {
               </CardTitle>
             </CardHeader>
             <CardContent className="text-center">
-              <p className="text-blue-100 mb-2">+61478127730</p>
-              <p className="text-blue-100">+61422704057</p>
+              <p className="text-blue-100 mb-2">+61414267261</p>
             </CardContent>
           </Card>
           
@@ -64,8 +63,7 @@ const Contact = () => {
             </CardHeader>
             <CardContent className="text-center">
               <p className="text-blue-100">
-                12 Osborn grove<br />
-                Pakenham VIC 3810<br />
+                Melbourne VIC 3000<br />
                 Australia
               </p>
             </CardContent>
