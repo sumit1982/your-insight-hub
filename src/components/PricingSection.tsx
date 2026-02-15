@@ -47,8 +47,7 @@ const PricingSection = () => {
               
               <div className="bg-consulting-light rounded-lg p-4 mb-6">
                 <p className="text-consulting-navy text-base">
-                  Plus a <span className="font-bold text-primary">$1,199 AUD onwards</span> one-off setup with Monthly retainer cost stating at <span className="font-bold text-primary">$299 AUD onwards</span> for an AI agent 
-                  trained on a custom knowledge base of your business
+                  Get your own fully customised AI agent from just <span className="font-bold text-primary">$1,199 AUD (one-time setup)</span>, with ongoing optimisation and support from <span className="font-bold text-primary">$299 AUD onwards</span> AI will be trained specifically on your business knowledge, processes, and services working 24/7 to capture leads, answer enquiries, and streamline operations.
                 </p>
               </div>
               
