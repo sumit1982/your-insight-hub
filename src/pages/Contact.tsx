@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { Mail, Phone, MapPin, Clock } from "lucide-react";
+import { Mail, Phone, MapPin, Clock, Facebook, Instagram } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -139,10 +139,30 @@ const Contact = () => {
                 </CardTitle>
               </CardHeader>
               <CardContent className="text-center">
-                <p className="text-blue-100">
+                <p className="text-blue-100 mb-4">
                   Melbourne VIC 3000<br />
                   Australia
                 </p>
+                <div className="flex items-center justify-center gap-4 pt-2 border-t border-white/20">
+                  <a
+                    href="https://www.facebook.com/EveryStepConsulting"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-blue-200 hover:text-white transition-colors"
+                    aria-label="Facebook"
+                  >
+                    <Facebook className="w-5 h-5" />
+                  </a>
+                  <a
+                    href="https://www.instagram.com/everystepconsulting"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-blue-200 hover:text-white transition-colors"
+                    aria-label="Instagram"
+                  >
+                    <Instagram className="w-5 h-5" />
+                  </a>
+                </div>
               </CardContent>
             </Card>
             
