@@ -47,7 +47,7 @@ const PricingSection = () => {
               
               <div className="bg-consulting-light rounded-lg p-4 mb-6">
                 <p className="text-consulting-navy text-base">
-                  Get your own fully customised AI agent from just <span className="font-bold text-primary">$1,199 AUD onwards (one-time setup)</span>, with ongoing optimisation and support from <span className="font-bold text-primary">$299 AUD onwards</span> that will be trained specifically on your business knowledge, processes, and services working round the clock to capture leads, answer enquiries, and streamline operations.
+                  Get your own fully customised AI agent from just <span className="font-bold text-primary">$1,199 AUD onwards (one-time setup)</span>, with ongoing optimisation and support from <span className="font-bold text-primary">$299 AUD onwards (monthly)</span> that will be trained specifically on your business knowledge, processes, and services working round the clock to capture leads, answer enquiries, and streamline operations.
                 </p>
               </div>
               
