@@ -145,7 +145,7 @@ const Contact = () => {
                 </p>
                 <div className="flex items-center justify-center gap-4 pt-2 border-t border-white/20">
                   <a
-                    href="https://www.facebook.com/EveryStepConsulting"
+                    href="https://www.facebook.com/profile.php?id=61587485263625"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-2 text-blue-200 hover:text-white transition-colors"
