@@ -1,0 +1,18 @@
+{
+    "name": "EveryStep Consulting",
+    "short_name": "EveryStep",
+    "description": "AI-powered business consulting, automation, and digital transformation services",
+    "icons": [
+      {
+        "src": "/favicon.png",
+        "sizes": "512x512",
+        "type": "image/png",
+        "purpose": "any maskable"
+      }
+    ],
+    "theme_color": "#14B8A6",
+    "background_color": "#ffffff",
+    "display": "standalone",
+    "start_url": "/",
+    "scope": "/"
+  }
