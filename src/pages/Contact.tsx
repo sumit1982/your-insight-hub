@@ -275,11 +275,7 @@ const Contact = () => {
               </form>
             </CardContent>
           </Card>
-          
-          <div className="text-center mt-8">
-            <Link to="/" className="text-consulting-blue hover:underline">← Back to Home</Link>
-          </div>
-        </div>
+</div>
       </section>
     </div>
   );
