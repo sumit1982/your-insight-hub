@@ -86,8 +86,9 @@ const Contact = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <Navbar />
       {/* Contact Information */}
-      <section className="py-20 bg-gradient-to-br from-consulting-navy to-consulting-blue">
+      <section className="pt-32 pb-20 bg-gradient-to-br from-consulting-navy to-consulting-blue">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">Ready to Get Started?</h2>
