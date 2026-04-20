@@ -7,6 +7,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
+import Navbar from "@/components/Navbar";
 
 const SuccessBanner = ({ message }: { message: string }) => (
   <div className="bg-green-500 text-white text-center py-2 rounded-md mb-4">
