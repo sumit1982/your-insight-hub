@@ -130,12 +130,7 @@ const ITConsulting = () => {
                 Schedule IT Assessment
               </Button>
             </Link>
-            <div className="mt-4">
-              <Link to="/" className="text-consulting-blue hover:underline">
-                ← Back to Home
-              </Link>
-            </div>
-          </div>
+</div>
         </div>
       </section>
     </div>

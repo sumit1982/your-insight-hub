@@ -89,12 +89,7 @@ const PrivateAISetup = () => {
           <p className="text-xl text-consulting-gray mb-8">
             Get your private AI setup with enterprise-grade security, compliance, and dedicated hosting.
           </p>
-          <Link to="/">
-            <Button size="lg" className="px-8 py-4">
-              Back to Home
-            </Button>
-          </Link>
-        </div>
+</div>
       </section>
     </div>
   );
