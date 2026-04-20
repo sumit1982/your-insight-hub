@@ -10,6 +10,8 @@ const Navbar = () => {
   const [isMobileServicesOpen, setIsMobileServicesOpen] = useState(false);
   const [isMounted, setIsMounted] = useState(false);
   const [isDesktop, setIsDesktop] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
 
   // Use useLayoutEffect for immediate execution before paint
   useLayoutEffect(() => {
