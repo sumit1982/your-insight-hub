@@ -89,12 +89,7 @@ const AICallAgents = () => {
           <p className="text-xl text-consulting-gray mb-8">
             Transform your phone operations with intelligent AI agents that handle calls professionally and efficiently.
           </p>
-          <Link to="/">
-            <Button size="lg" className="px-8 py-4">
-              Back to Home
-            </Button>
-          </Link>
-        </div>
+</div>
       </section>
     </div>
   );

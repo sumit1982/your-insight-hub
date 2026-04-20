@@ -89,12 +89,7 @@ const AIDevelopmentPlatform = () => {
           <p className="text-xl text-consulting-gray mb-8">
             Access our secure AI development platform for fast, efficient deployment of your intelligent solutions.
           </p>
-          <Link to="/">
-            <Button size="lg" className="px-8 py-4">
-              Back to Home
-            </Button>
-          </Link>
-        </div>
+</div>
       </section>
     </div>
   );
