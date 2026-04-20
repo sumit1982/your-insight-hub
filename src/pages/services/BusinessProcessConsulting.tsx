@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import Navbar from "@/components/Navbar";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { CheckCircle, Workflow, TrendingUp, Settings, Zap } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -6,6 +7,7 @@ import { Link } from "react-router-dom";
 const BusinessProcessConsulting = () => {
   return (
     <div className="min-h-screen bg-background">
+      <Navbar />
       {/* Header */}
       <section className="pt-24 pb-16 bg-gradient-to-br from-consulting-light to-white">
         <div className="max-w-7xl mx-auto px-6">

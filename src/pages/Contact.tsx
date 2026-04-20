@@ -7,6 +7,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
+import Navbar from "@/components/Navbar";
 
 const SuccessBanner = ({ message }: { message: string }) => (
   <div className="bg-green-500 text-white text-center py-2 rounded-md mb-4">
@@ -85,8 +86,9 @@ const Contact = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <Navbar />
       {/* Contact Information */}
-      <section className="py-20 bg-gradient-to-br from-consulting-navy to-consulting-blue">
+      <section className="pt-32 pb-20 bg-gradient-to-br from-consulting-navy to-consulting-blue">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">Ready to Get Started?</h2>

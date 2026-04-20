@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import Navbar from "@/components/Navbar";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Phone, DollarSign, Clock, Users } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -6,8 +7,9 @@ import { Link } from "react-router-dom";
 const AICallAgents = () => {
   return (
     <div className="min-h-screen bg-background">
+      <Navbar />
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-consulting-navy to-consulting-blue">
+      <section className="pt-32 pb-20 bg-gradient-to-br from-consulting-navy to-consulting-blue">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center">
             <Phone className="w-20 h-20 text-blue-300 mx-auto mb-6" />
